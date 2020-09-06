@@ -46,13 +46,16 @@
         
         <fieldset class="repeating_skills">
             <select name="attr_dtype" class="dtype">
-                <option value="d4">d4</option>
-                <option value="d6">d6</option>
-                <option value="d8">d8</option>
-                <option value="d10">d10</option>
-                <option value="d12">d12</option>
+                <option value="@{strength}">STR</option>
+                <option value="@{agility}">AGI</option>
+                <option value="@{tough}">TGH</option>
+                <option value="@{cool}">CÜL</option>
+                <option value="@{sharp}">SHP</option>
+                <option value="@{mind}">MND</option>
+                <option value="@{luck}">LCK</option>
             </select>
             <input type="text" name="attr_skillname" />
+            <button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=[[2d6 + @{dtype}]]}}'></button><span class='dee'></span>
         </fieldset>
 
 	</div>
