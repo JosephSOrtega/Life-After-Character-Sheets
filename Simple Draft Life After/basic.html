@@ -21,26 +21,25 @@
 	<div class="col">
 		<h2>Stats</h2>
 
-		<label>Strength - STR </label><input type="text" name='attr_agility' class='sheet-short'>
-        <button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=[[1d20 + @{agility}]]}}'></button><span class='dee'>d</span>
-        <br />
-		<label>Agility - AGI </label><input type="text" name='attr_smarts' class='sheet-short'>
-        <button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=[[1d20 + @{smarts}]]}}'></button><span class='dee'>d</span>
-        <br />
-		<label>Toughness - TGH </label><input type="text" name='attr_spirit' class='sheet-short'>
-        <button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=[[1d20 + @{spirit}]]}}'></button><span class='dee'>d</span>
-        <br />
-		<label>Cool - CÜL </label><input type="text" name='attr_strength' class='sheet-short'>
-        <button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=[[1d20 + @{strength}]]}}'></button><span class='dee'>d</span>
-        <br />
-		<label>Sharp - SHP </label><input type="text" name='attr_strength' class='sheet-short'>
-        <button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=[[1d20 + @{strength}]]}}'></button><span class='dee'>d</span>
-        <br />
-		<label>Mind - MND </label><input type="text" name='attr_strength' class='sheet-short'>
-        <button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=[[1d20 + @{strength}]]}}'></button><span class='dee'>d</span>
-        <br />
-		<label>Luck - LCK </label><input type="text" name='attr_vigor' class='sheet-short' value='25'>
-        <button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=[[1d20 + @{vigor}]]}}'></button><span class='dee'>d</span>
+		<label>Strength (STR) </label><select class='sheet-short sheet-select' name='attr_strength'><option value="-1">-1</option><option value="0">0</option><option value="1">1</option><option value="2">2</option></select>
+        <button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=[[2d6 + @{strength}]]}}'></button><span class='dee'></span>
+		<label>Agility (AGI) </label><select class='sheet-short sheet-select' name='attr_agility'><option value="-1">-1</option><option value="0">0</option><option value="1">1</option><option value="2">2</option></select>
+        <button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=[[2d6 + @{agility}]]}}'></button><span class='dee'></span>
+		<label>Tough (TGH) </label><select class='sheet-short sheet-select' name='attr_tough'><option value="-1">-1</option><option value="0">0</option><option value="1">1</option><option value="2">2</option></select>
+        <button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=[[2d6 + @{tough}]]}}'></button><span class='dee'></span>
+		<label>Cool (CÜL) </label><select class='sheet-short sheet-select' name='attr_cool'><option value="-1">-1</option><option value="0">0</option><option value="1">1</option><option value="2">2</option></select>
+        <button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=[[2d6 + @{cool}]]}}'></button><span class='dee'></span>
+		<label>Sharp (SHP) </label><select class='sheet-short sheet-select' name='attr_sharp'><option value="-1">-1</option><option value="0">0</option><option value="1">1</option><option value="2">2</option></select>
+        <button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=[[2d6 + @{sharp}]]}}'></button><span class='dee'></span>
+		<label>Mind (MND) </label><select class='sheet-short sheet-select' name='attr_mind'><option value="-1">-1</option><option value="0">0</option><option value="1">1</option><option value="2">2</option></select>
+        <button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=[[2d6 + @{mind}]]}}'></button><span class='dee'></span>
+        <!-- Previous input -->
+        <!-- <label>Luck (LCK) </label><input type="text" name='attr_luck' class='sheet-short' min="-1" max="2">
+        <button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=[[2d6 + @{luck}]]}}'></button><span class='dee'></span> -->
+        <label>Luck (LCK) </label><select class='sheet-short sheet-select' name='attr_luck'><option value="-1">-1</option><option value="0">0</option><option value="1">1</option><option value="2">2</option></select>
+        <button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=[[2d6 + @{luck}]]}}'></button><span class='dee'></span>
+        <label class='sheet-short'>Base Roll</label>
+        <button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=[[2d6]]}}'></button><span class='dee'></span>
         <hr />
         
         <h2">Skills</h2>
