@@ -38,7 +38,7 @@ input.sheet-short {
 
 select.sheet-dtype {
     vertical-align: top;
-    width: 60px;
+    width: 20%;
 }
 span.sheet-dee {
 	font-size: 1.4em;
@@ -66,13 +66,13 @@ span.sheet-dee {
 }
 
 .sheet-select {
-	width: 40%
+	width: 40%;
 }
 
 .sheet-moves {
-	width: 70%
+	width: 65%;
 }
 
 .sheet-moves-text {
-	width: 90%
+	width: 90%;
 }

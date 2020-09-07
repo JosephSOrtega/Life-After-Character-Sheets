@@ -46,17 +46,17 @@
         
         <fieldset class="repeating_skills">
             <select name="attr_dtype" class="dtype">
-                <option value="@{strength}">STR</option>
-                <option value="@{agility}">AGI</option>
-                <option value="@{tough}">TGH</option>
-                <option value="@{cool}">CÜL</option>
-                <option value="@{sharp}">SHP</option>
-                <option value="@{mind}">MND</option>
-                <option value="@{luck}">LCK</option>
+                <option value="@{strength}">+STR</option>
+                <option value="@{agility}">+AGI</option>
+                <option value="@{tough}">+TGH</option>
+                <option value="@{cool}">+CÜL</option>
+                <option value="@{sharp}">+SHP</option>
+                <option value="@{mind}">+MND</option>
+                <option value="@{luck}">+LCK</option>
             </select>
-            <input type="text" name="attr_skillname" class='sheet-moves' />
+            <input type="text" name="attr_skillname" class='sheet-moves' value='Title'/>
             <button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=[[2d6 + @{dtype}]]}}'></button><span class='dee'></span>
-            <textarea name="attr_skillname" class='sheet-moves-text'></textarea>
+            <textarea name="attr_skilltext" class='sheet-moves-text'>Move text here</textarea>
         </fieldset>
 
 	</div>
