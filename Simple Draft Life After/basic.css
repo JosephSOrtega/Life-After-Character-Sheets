@@ -24,8 +24,14 @@ input {
 }
 
 img {
-	max-height: 100px;
-}
+	max-height: 200px;
+	max-width: 200px;
+	height: 75%;
+	width: 75%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	}
 
 textarea {
 	resize: vertical;
@@ -75,4 +81,16 @@ span.sheet-dee {
 
 .sheet-moves-text {
 	width: 90%;
+}
+
+.stacking-input {
+	width: 10%;
+}
+
+.wound-title {
+	width: 5%;
+}
+
+.stat-titles {
+	width: 20%;
 }
