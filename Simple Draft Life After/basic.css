@@ -66,5 +66,13 @@ span.sheet-dee {
 }
 
 .sheet-select {
-	width: 20%
+	width: 40%
+}
+
+.sheet-moves {
+	width: 70%
+}
+
+.sheet-moves-text {
+	width: 90%
 }
