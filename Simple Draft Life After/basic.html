@@ -39,7 +39,9 @@
         <label>Luck - (LCK) </label><select class='sheet-short sheet-select' name='attr_luck'><option value="-1">-1</option><option value="0">0</option><option value="1">1</option><option value="2">2</option></select>
         <button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=[[2d6 + @{luck}]]}}'></button><span class='dee'></span>
         <label class='sheet-short'>Base Roll</label>
-        <button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=[[2d6]]}}'></button><span class='dee'></span>
+        <button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=[[2d6]]}}'></button><span class='dee'></span><br/>
+        <label class='sheet-short'>Direct Hit Roll</label>
+        <button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=[[1d12 + @luck]]}}'></button><span class='dee'></span>
         <hr />
         
         <h2>Moves</h2>
