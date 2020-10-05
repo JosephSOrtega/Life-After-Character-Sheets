@@ -38,19 +38,9 @@
         <button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=[[2d6 + @{mind}]]}}'></button><span class='dee'></span>
         <label>Luck - (LCK) </label><select class='sheet-short sheet-select' name='attr_luck'><option value="-1">-1</option><option value="0">0</option><option value="1">1</option><option value="2">2</option></select>
         <button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=[[2d6 + @{luck}]]}}'></button><span class='dee'></span>
-        <br/><label class='sheet-short'>Damage Roll</label>
-            <select name="attr_dtype" class="dtype">
-                <option value="1d4">d4</option>
-                <option value="1d6">d6</option>
-                <option value="1d8">d8</option>
-                <option value="1d10">d10</option>
-                <option value="1d12">d12</option>
-            </select>
-            <button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=[[@{dtype}]]}}'></button><span class='dee'></span><br/>
-        <label class='sheet-short'>Base Roll</label>
+        <label class='sheet-short'>Base 2d6 Roll</label>
         <button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=[[2d6]]}}'></button><span class='dee'></span><br/>
-        <label class='sheet-short'>Direct Hit Roll</label>
-        <button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=[[1d12 + @luck]]}}'></button><span class='dee'></span>
+        
         <hr />
         
         <h2>Moves</h2>
@@ -75,7 +65,7 @@
 	<div class="col">
 
         <h2>Combat Attributes</h2><br/>
-    	<label>Damage Die:</label>
+    	<label>Class Dam. Die:</label>
             <select name="attr_damagedie" class="dtype">
                 <option value="1d4">d4</option>
                 <option value="1d6">d6</option>
@@ -86,7 +76,19 @@
         <label>Armor:</label><input type="number" name="attr_armor" /><br/>
     	<label>Soak:</label><input type="number" name="attr_soak" /><br/><br/>
     	<label>Total Dam. Resistance:</label><input type="number" name="attr_dr" /><br/>
-        
+        <br/><br/>
+        <label class='sheet-short'>Damage Roll</label>
+        <select name="attr_dtype" class="dtype">
+            <option value="1d4">d4</option>
+            <option value="1d6">d6</option>
+            <option value="1d8">d8</option>
+            <option value="1d10">d10</option>
+            <option value="1d12">d12</option>
+        </select>
+        <button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=[[@{dtype}]]}}'></button><span class='dee'></span><br/>
+        <label class='sheet-short'>Direct Hit Roll</label>
+        <button type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} {{result=[[1d12 + @luck]]}}'></button><span class='dee'></span>
+
         <hr/>
         
         <h2>Inventory</h2>
